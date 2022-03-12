@@ -3,16 +3,30 @@
 
     &__item{
         display: flex;
+
+        @media (max-width: 800px) {        
+            display: block;        
+        }
         //background-color: #285980;
         &__image{
             width: 50%;
             height: 35rem;
             margin-top: 5rem;
+
+            @media (max-width: 800px) {        
+                width: 100%;
+                margin-top: 0;
+                height: 15rem;
+            }
         }
 
         &__content{   
             text-align: left;         
             padding: 7rem;
+
+            @media (max-width: 900px) {        
+                padding: 2rem;
+            }            
 
             &__bar{                
                 //background-color: white;
