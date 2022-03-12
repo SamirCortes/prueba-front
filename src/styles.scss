@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin: -16px 0px;
+    font-family: 'Graphik';
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('assets/Graphik-Extralight.otf');
+}

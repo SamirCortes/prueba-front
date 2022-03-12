@@ -1,0 +1,8 @@
+<header>
+    <img src="/assets/logo.png" alt="image" class="logo">
+    <ul class="menu">
+        <li *ngFor="let item of menu" class="menu__item " [ngClass]="{'menu__item--active': item.active}" (click)="handleChangeItem(item)">
+            <label>{{item.label}}</label>
+        </li>
+    </ul>
+</header>

@@ -1,0 +1,63 @@
+<div class="section-principal">
+    <app-header></app-header>
+    <h1 class="section-principal__title">
+        Nos especializamos en
+        <span>interfaces digitales que los usuarios aman</span>
+    </h1>
+    <button class="section-principal__button">Hablemos de tu proyecto</button>
+</div>
+<div class="streaming">
+    <img  class="streaming__icon" src="https://img.icons8.com/color/50/000000/youtube-live.png"/>
+    <label class="streaming__description"><b>EN DIRECTO</b> - SOHO está presente en el <b>DIGITALBANK MONTEVIDEO.</b> "Experiencia de usuario" por Alvaro Añon (SEO de soho).</label>
+    <button class="streaming__button streaming__button--success">VER EVENTO</button>
+    <button class="streaming__button streaming__button--underline">PROXIMOS EVENTOS</button>
+</div>
+<div class="projects">
+    <h2 class="projects__title">17 años de experiencia en pos de tu proyecto</h2>
+    <hr class="projects__bar">
+    <p class="projects__description">Especializados desde 1996 en usabilidad, experiencia del usuario (UX) y diseño de experiencias de proyectos digitales. 
+        Aportamos estrategias de innovación centrada en el usuario y los objetivos de negocio de tu proyecto. Cotrabajando 
+        mejoraremos tu tasa de conversión, KPI´s, ROI y los resultados de tu actual publicidadPPC (pay per click)
+    </p>
+</div>
+<div class="services">
+    <div class="services__item services__item--ligth">
+        <h3 class="services__item__title">Estrategia, usabilidad & ux</h3>
+        <p class="services__item__description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting 
+            industry. Lorem Ipsum has been 
+        </p>
+    </div>
+    <div class="services__item services__item--dark">
+        <h3 class="services__item__title">Mejoramos la experiencia</h3>
+        <p class="services__item__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+            been
+        </p>
+    </div>
+    <div class="services__item services__item--medium">
+        <h3 class="services__item__title">Medición continua de objetivos</h3>
+        <p class="services__item__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+            been
+        </p>
+    </div>
+</div>
+<div class="projects">
+    <h2 class="projects__title">Proyectos destacados</h2>
+    <hr class="projects__bar">
+    <p class="projects__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled 
+        it to makprinter took a galley typesetting
+    </p>
+</div>
+<app-projects></app-projects>
+<div class="projects clients-height">
+    <h2 class="projects__title">Lo que dicen nuestros clientes</h2>
+    <hr class="projects__bar">    
+</div>
+<div class="clients">
+    <div class="clients__item" *ngFor="let c of clients;" [ngStyle]="{'background-image': 'url(' +c.url+')'}">        
+        <p class="clients__item__description">"{{ c.descripcion }}"</p>
+        <span class="clients__item__name">{{ c.nombre }} - {{ c.cargo}}</span>
+    </div>    
+</div>
+

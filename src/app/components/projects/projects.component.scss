@@ -1,0 +1,54 @@
+.app-projects{
+
+
+    &__item{
+        display: flex;
+        //background-color: #285980;
+        &__image{
+            width: 50%;
+            height: 35rem;
+            margin-top: 5rem;
+        }
+
+        &__content{   
+            text-align: left;         
+            padding: 7rem;
+
+            &__bar{                
+                //background-color: white;
+                width: 5rem;
+                height: 0.2rem;
+                border: 0;
+                margin-left: 0;
+                margin-top: 1.5rem;
+            }
+
+            &__title{
+                font-size: 2.5rem;
+                //color: white;
+                margin: 1.5rem 0;
+            }
+
+            &__description{
+                width: 70%;
+                color: #BDC0C5;
+                line-height: 1.5rem;
+                font-weight: 800;                
+            }
+
+            &__button{
+                display: block;        
+                //color: #285980;
+                width: 12rem;
+                height: 3.5rem;
+                font-size: 0.8rem;
+                border-radius: 0.4rem;
+                border: 0px;
+                text-transform: uppercase;
+                font-weight: 800;
+                cursor: pointer;
+                margin-top: 3rem;
+            }
+        }
+    }
+}

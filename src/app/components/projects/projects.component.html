@@ -1,0 +1,17 @@
+<div class="app-projects">
+    <div class="app-projects__item" *ngFor="let p of projects; let i = index" [ngStyle]="{'background-color': p.fondo,'flex-direction': ((i+1)%2) ==0 ?'row-reverse' : ''}">
+        <img src="{{p.imagen}}" alt="image" class="app-projects__item__image">
+        <div class="app-projects__item__content">
+            <img class="app-projects__item__content__logo" src="{{p.logo}}" alt="image">
+            <hr class="app-projects__item__content__bar" [ngStyle]="{'background-color': p.texto}">
+            <h4 class="app-projects__item__content__title" [ngStyle]="{'color': p.texto}">{{p.name}}</h4>
+            <p class="app-projects__item__content__description">{{p.descripcion}}</p>
+            <button 
+                class="app-projects__item__content__button" 
+                [ngStyle]="{'color': p.fondo}" 
+                (click)="handleRedirect(p.enlace)">
+                VER DETALLES
+            </button>
+        </div>
+    </div>
+</div>

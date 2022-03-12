@@ -1,0 +1,31 @@
+.logo{
+    position: absolute;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;    
+    list-style-type: none;
+    padding: 1rem 0rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 800;
+
+    &__item{
+        padding: 0rem 2rem;
+        cursor: pointer;        
+
+        &--active{    
+            cursor: pointer;                    
+            label{
+                display: block;
+                padding-bottom: 0.3rem;
+                border-bottom: 0.2rem solid rgb(122, 202, 3);
+                cursor: pointer;
+            }            
+        }
+    }
+
+    
+}
